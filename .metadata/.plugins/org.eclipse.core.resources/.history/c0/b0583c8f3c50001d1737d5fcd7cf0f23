@@ -1,0 +1,22 @@
+package com.example.demo.service;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.model.JpaMember;
+import com.example.demo.repository.MemberRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructors
+public class MemberService {
+	
+	private final MemberRepository memberRepository;
+	
+	// 추가
+	public void save(JpaMember member) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,3 @@
+$("#btnUpdate").click(function(){
+	alert('수정')
+})

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.myspring.pro27.member.interceptor&apos; to &apos;pro28/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;pro27&apos;&#x0D;&#x0A;- Destination element: &apos;pro28/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;pro27/src/main/java/com.myspring.pro27.member.interceptor&apos;" description="Copy package" destination="=pro28/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.myspring.pro27.member.interceptor" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1661491307431" version="1.0"/>
+</session>

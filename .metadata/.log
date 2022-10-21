@@ -1,0 +1,1745 @@
+!SESSION 2022-09-23 09:13:15.226 -----------------------------------------------
+eclipse.buildId=4.15.1.202206171354
+java.version=11.0.15.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+This is a continuation of log file C:\sts4_workspace\.metadata\.bak_0.log
+Created Time: 2022-09-23 09:33:30.166
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:30.167
+!MESSAGE Error processing mirrors URL: http://www.eclipse.org/downloads/download.php?file=/buildship/updates/e410/releases/3.x/3.0.0.v20181205-1821&format=xml&countryCode=kr&timeZone=9&format=xml
+!STACK 1
+org.eclipse.core.runtime.CoreException: Unable to read repository at http://www.eclipse.org/downloads/download.php?file=/buildship/updates/e410/releases/3.x/3.0.0.v20181205-1821&format=xml&countryCode=kr&timeZone=9&format=xml.
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:191)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.getMirrorsDocument(MirrorSelector.java:294)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.computeMirrors(MirrorSelector.java:259)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.initMirrors(MirrorSelector.java:349)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.selectMirror(MirrorSelector.java:417)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.getMirrorLocation(MirrorSelector.java:327)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getMirror(SimpleArtifactRepository.java:774)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:671)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:804)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:329)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:299)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:232)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:162)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:787)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifacts(SimpleArtifactRepository.java:864)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.getArtifacts(CompositeArtifactRepository.java:362)
+	at org.eclipse.equinox.internal.p2.engine.DownloadManager.fetch(DownloadManager.java:127)
+	at org.eclipse.equinox.internal.p2.engine.DownloadManager.start(DownloadManager.java:98)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:111)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:254)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:105)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:50)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:80)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:48)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:181)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:76)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.hc.core5.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:149)
+	at org.apache.hc.core5.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.hc.core5.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:241)
+	at org.apache.hc.core5.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:53)
+	at org.apache.hc.core5.http.impl.io.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:298)
+	at org.apache.hc.core5.http.impl.io.HttpRequestExecutor.execute(HttpRequestExecutor.java:175)
+	at org.apache.hc.core5.http.impl.io.HttpRequestExecutor.execute(HttpRequestExecutor.java:218)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager$InternalConnectionEndpoint.execute(PoolingHttpClientConnectionManager.java:583)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.execute(InternalExecRuntime.java:212)
+	at org.apache.hc.client5.http.impl.classic.MainClientExec.execute(MainClientExec.java:105)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:182)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1001)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	... 1 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-09-23 09:33:30.169
+!MESSAGE Unable to read repository at http://www.eclipse.org/downloads/download.php?file=/buildship/updates/e410/releases/3.x/3.0.0.v20181205-1821&format=xml&countryCode=kr&timeZone=9&format=xml.
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.hc.core5.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:149)
+	at org.apache.hc.core5.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.hc.core5.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:241)
+	at org.apache.hc.core5.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:53)
+	at org.apache.hc.core5.http.impl.io.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:298)
+	at org.apache.hc.core5.http.impl.io.HttpRequestExecutor.execute(HttpRequestExecutor.java:175)
+	at org.apache.hc.core5.http.impl.io.HttpRequestExecutor.execute(HttpRequestExecutor.java:218)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager$InternalConnectionEndpoint.execute(PoolingHttpClientConnectionManager.java:583)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.execute(InternalExecRuntime.java:212)
+	at org.apache.hc.client5.http.impl.classic.MainClientExec.execute(MainClientExec.java:105)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:182)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1001)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2022-09-23 09:33:51.467
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2022-09-23 09:33:51.467
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,com.sun.xml.bind,2.2.0.v201505121915
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,javax.xml.ws,2.1.0.v200902101523
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.apache.commons.httpclient,3.1.0.v201012070820
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.apache.lucene.analyzers-common,6.1.0.v20161115-1612
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.apache.lucene.core,6.1.0.v20170814-1820
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.apache.lucene.queryparser,6.1.0.v20161115-1612
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.codehaus.jackson.core,1.9.13
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.codehaus.jackson.mapper,1.9.13
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.bugzilla.ide,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.core,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons,3.24.0.v20180613-1658
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.identity.core,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons.identity,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.net,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.notifications.core,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons.notifications,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.notifications.feed,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.notifications.ui,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.repositories.core,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons.repositories,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.repositories.ui,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.screenshots,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.ui,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.workbench,3.24.0.v20180613-1658
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.context.core,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.context.tasks.ui,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.context.ui,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.context_feature,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.debug.ui,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.discovery.core,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.discovery,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.discovery.ui,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.help.ui,3.24.0.v20170629-1737
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.ide.ant,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.ide.ui,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.ide_feature,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.java.tasks,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.java.ui,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.java_feature,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.monitor.core,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.monitor,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.monitor.ui,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.resources.ui,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.bugs,3.24.0.v20170629-1737
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.core,3.24.0.v20170704-1739
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.tasks.ide,3.24.0.v20170629-1737
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.index.core,3.24.0.v20170629-1737
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.index.ui,3.24.0.v20170629-1737
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.search,3.24.0.v20170629-1737
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.ui,3.24.0.v20180227-0955
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.team.ui,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.team_feature,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:33:51.467
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn_feature,3.24.0.v20180227-0955
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-09-23 09:34:55.455
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/wildwebdeveloper/releases/latest/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-09-23 09:34:55.472
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/mylyn/docs/releases/3.0/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-09-23 09:34:57.596
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/mylyn/docs/releases/3.0/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-09-23 09:34:58.305
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/wildwebdeveloper/releases/latest/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2022-09-23 09:36:44.587
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2022-09-23 09:36:44.587
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,com.sun.xml.bind,2.2.0.v201505121915
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.apache.commons.httpclient,3.1.0.v201012070820
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.apache.lucene.analyzers-common,6.1.0.v20161115-1612
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.apache.lucene.core,6.1.0.v20170814-1820
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.apache.lucene.queryparser,6.1.0.v20161115-1612
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.core,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons,3.24.0.v20180613-1658
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.identity.core,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons.identity,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.net,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.notifications.core,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons.notifications,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.notifications.feed,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.notifications.ui,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.repositories.core,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons.repositories,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.repositories.ui,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.screenshots,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.ui,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.workbench,3.24.0.v20180613-1658
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.context.core,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.context.tasks.ui,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.context.ui,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.context_feature,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.discovery.core,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.discovery,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.discovery.ui,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.monitor.core,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.monitor,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.monitor.ui,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.resources.ui,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.core,3.24.0.v20170704-1739
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.index.core,3.24.0.v20170629-1737
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.index.ui,3.24.0.v20170629-1737
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.search,3.24.0.v20170629-1737
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.ui,3.24.0.v20180227-0955
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:36:44.587
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn_feature,3.24.0.v20180227-0955
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-09-23 09:36:59.069
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/mylyn/docs/releases/3.0/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-09-23 09:36:59.071
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/wildwebdeveloper/releases/latest/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-09-23 09:37:01.831
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/mylyn/docs/releases/3.0/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2022-09-23 09:37:01.877
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/wildwebdeveloper/releases/latest/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2022-09-23 09:40:19.957
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2022-09-23 09:40:19.957
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,com.sun.xml.bind,2.2.0.v201505121915
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,javax.xml.ws,2.1.0.v200902101523
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.apache.commons.httpclient,3.1.0.v201012070820
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.apache.lucene.analyzers-common,6.1.0.v20161115-1612
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.apache.lucene.core,6.1.0.v20170814-1820
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.apache.lucene.queryparser,6.1.0.v20161115-1612
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.codehaus.jackson.core,1.9.13
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.codehaus.jackson.mapper,1.9.13
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.bugzilla.ide,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.core,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons,3.24.0.v20180613-1658
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.identity.core,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons.identity,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.net,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.notifications.core,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons.notifications,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.notifications.feed,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.notifications.ui,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.repositories.core,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.commons.repositories,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.repositories.ui,1.16.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.screenshots,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.ui,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.commons.workbench,3.24.0.v20180613-1658
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.context.core,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.context.tasks.ui,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.context.ui,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.context_feature,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.debug.ui,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.discovery.core,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.discovery,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.discovery.ui,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.help.ui,3.24.0.v20170629-1737
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.ide.ant,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.ide.ui,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.ide_feature,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.java.tasks,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.java.ui,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.java_feature,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.monitor.core,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.monitor,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.monitor.ui,3.24.0.v20170629-1728
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.resources.ui,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.bugs,3.24.0.v20170629-1737
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.core,3.24.0.v20170704-1739
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.tasks.ide,3.24.0.v20170629-1737
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.index.core,3.24.0.v20170629-1737
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.index.ui,3.24.0.v20170629-1737
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.search,3.24.0.v20170629-1737
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.tasks.ui,3.24.0.v20180227-0955
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.mylyn.team.ui,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn.team_feature,3.24.0.v20170629-2230
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-09-23 09:40:19.957
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.mylyn_feature,3.24.0.v20180227-0955
+
+!ENTRY org.eclipse.ui 2 2 2022-09-23 09:40:48.688
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2022-09-23 09:58:53.143 -----------------------------------------------
+eclipse.buildId=4.15.1.202206171354
+java.version=11.0.15.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-09-23 09:59:00.826
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-23 09:59:00.826
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@48d24d63,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@695c8b32,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-23 09:59:00.826
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1adec8d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6eb332d1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-09-23 09:59:03.410
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\dta47'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-23 09:59:41.736
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-23 09:59:41.755
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.ui 2 2 2022-09-23 10:00:03.892
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2022-09-24 20:32:04.098 -----------------------------------------------
+eclipse.buildId=4.15.1.202206171354
+java.version=11.0.15.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-09-24 20:32:19.826
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-24 20:32:19.826
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@532e00bd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@47ab3688,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-24 20:32:19.826
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@47fbf95e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@49482761,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-09-24 20:32:22.905
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\dta47'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 20:32:38.866
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 20:32:39.573
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 20:32:47.521
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 20:32:48.134
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.ui 2 2 2022-09-24 20:32:54.805
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.core.jobs 4 2 2022-09-24 20:32:55.873
+!MESSAGE An internal error occurred during: "Caching Remote Resources".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.internet.cache.internal.CacheJob.run(CacheJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-09-24 20:32:56.658
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2022-09-24 20:58:23.990 -----------------------------------------------
+eclipse.buildId=4.15.1.202206171354
+java.version=11.0.15.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-09-24 20:58:25.572
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2022-09-24 20:58:28.051
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-24 20:58:28.051
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@689eab53,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1c24639e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-24 20:58:28.051
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5c9168c3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4ac0fdc7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-09-24 20:58:30.405
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\dta47'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 20:58:38.490
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 20:58:38.616
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 20:58:39.830
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 20:58:39.834
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 20:58:39.975
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 20:58:39.996
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 20:58:40.418
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 20:58:40.424
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 20:58:42.403
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 20:58:42.403
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.ui 2 2 2022-09-24 20:58:56.647
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2022-09-24 21:16:45.839 -----------------------------------------------
+eclipse.buildId=4.15.1.202206171354
+java.version=11.0.15.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-09-24 21:17:00.856
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-24 21:17:00.856
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6ce8bf64,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6413eeb7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-24 21:17:00.856
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@956cf3d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@712213ed,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-09-24 21:17:03.577
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\dta47'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2022-09-24 21:17:21.713
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2022-09-24 21:32:37.595 -----------------------------------------------
+eclipse.buildId=4.15.1.202206171354
+java.version=11.0.15.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-09-24 21:32:41.425
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-24 21:32:41.425
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@532e00bd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@47ab3688,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-24 21:32:41.425
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@47fbf95e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@49482761,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-09-24 21:32:46.219
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\dta47'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 21:37:42.044
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 21:37:42.064
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 21:37:43.406
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 21:37:43.438
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 21:37:43.965
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 21:37:43.988
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 21:37:44.289
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 21:37:44.330
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 21:37:45.973
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 21:37:46.412
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2022-09-24 22:27:46.219
+!MESSAGE Several ports (8005, 8080) required by Tomcat v9.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:29:25.830
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:29:25.842
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:29:27.503
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:29:27.510
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-24 22:29:28.236
+!MESSAGE Could not download javadoc for oracle.jdbc:OracleDriver:12.1.0.2.0
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact oracle.jdbc:OracleDriver:jar:javadoc:12.1.0.2.0
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:297)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing oracle.jdbc:OracleDriver:jar:javadoc:12.1.0.2.0
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-09-24 22:29:28.237
+!MESSAGE Could not resolve artifact oracle.jdbc:OracleDriver:jar:javadoc:12.1.0.2.0
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-09-24 22:29:28.237
+!MESSAGE Missing oracle.jdbc:OracleDriver:jar:javadoc:12.1.0.2.0
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-24 22:29:28.397
+!MESSAGE Could not download javadoc for commons-dbcp:commons-dbcp:1.2.2
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact commons-dbcp:commons-dbcp:jar:javadoc:1.2.2
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:297)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing commons-dbcp:commons-dbcp:jar:javadoc:1.2.2
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-09-24 22:29:28.397
+!MESSAGE Could not resolve artifact commons-dbcp:commons-dbcp:jar:javadoc:1.2.2
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-09-24 22:29:28.397
+!MESSAGE Missing commons-dbcp:commons-dbcp:jar:javadoc:1.2.2
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-24 22:29:29.153
+!MESSAGE Could not download javadoc for net.sf.json-lib:json-lib:2.4:jdk15
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact net.sf.json-lib:json-lib:jar:javadoc:2.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:297)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing net.sf.json-lib:json-lib:jar:javadoc:2.4
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-09-24 22:29:29.153
+!MESSAGE Could not resolve artifact net.sf.json-lib:json-lib:jar:javadoc:2.4
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-09-24 22:29:29.153
+!MESSAGE Missing net.sf.json-lib:json-lib:jar:javadoc:2.4
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2022-09-24 22:29:45.776
+!MESSAGE Several ports (8005, 8080) required by Tomcat v9.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.wst.server.core 4 0 2022-09-24 22:31:40.732
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2022-09-24 22:33:23.737
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2022-09-24 22:34:14.194
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.ui 2 2 2022-09-24 22:48:11.332
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:48:41.657
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:48:41.669
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:48:47.132
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:48:47.136
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:49:02.640
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:49:02.641
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:49:02.646
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:49:14.943
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:49:14.950
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:49:14.955
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:49:15.010
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:49:15.012
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:49:15.052
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:49:15.053
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:49:15.086
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:49:15.089
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:49:15.137
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:49:15.138
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:50:45.144
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:50:45.146
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:50:51.442
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:50:51.444
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:51:01.422
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:51:01.424
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:51:08.167
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:51:08.168
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:51:12.479
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-24 22:51:12.482
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jface 2 0 2022-09-24 22:52:01.305
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-24 22:52:01.305
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4956a88,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1377113d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2022-09-26 20:05:41.286 -----------------------------------------------
+eclipse.buildId=4.15.1.202206171354
+java.version=11.0.15.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-09-26 20:05:57.176
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-26 20:05:57.176
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1c15a6aa,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7dc963be,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-26 20:05:57.176
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@61c4fc34,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6f9999f6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-09-26 20:06:02.195
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\dta47'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-26 20:06:08.860
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-26 20:06:08.880
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-26 20:06:10.211
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-26 20:06:10.220
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-26 20:06:10.334
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-26 20:06:10.342
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-26 20:06:10.573
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-26 20:06:10.577
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-26 20:06:10.693
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-26 20:06:10.701
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-26 20:06:11.850
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-26 20:06:11.867
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-26 20:06:41.808
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2: https://issues.sonatype.org/browse/MVNCENTRAL-244
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-26 20:06:45.591
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2: https://issues.sonatype.org/browse/MVNCENTRAL-244
+
+!ENTRY org.eclipse.jface 2 0 2022-09-26 20:07:02.792
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-26 20:07:02.792
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@115cbd9b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@234a21e9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.core.resources 4 567 2022-09-26 20:09:59.612
+!MESSAGE The project description file (.project) for 'myboot01' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'myboot01' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:895)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:770)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1064)
+	at org.eclipse.ui.actions.OpenResourceAction$1.doOpenWithReferences(OpenResourceAction.java:233)
+	at org.eclipse.ui.actions.OpenResourceAction$1.runInWorkspace(OpenResourceAction.java:279)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 567 2022-09-26 20:10:03.602
+!MESSAGE The project description file (.project) for 'myboot01' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'myboot01' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:895)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:770)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1064)
+	at org.eclipse.ui.actions.OpenResourceAction$1.doOpenWithReferences(OpenResourceAction.java:233)
+	at org.eclipse.ui.actions.OpenResourceAction$1.runInWorkspace(OpenResourceAction.java:279)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-26 20:10:36.643
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-26 20:10:36.646
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.ui 2 2 2022-09-26 20:51:27.656
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2022-09-26 21:40:47.323 -----------------------------------------------
+eclipse.buildId=4.15.1.202206171354
+java.version=11.0.15.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-09-26 21:40:51.491
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-26 21:40:51.491
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@61c4fc34,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6f9999f6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-26 21:40:51.491
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5e085259,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@68ea1eb5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-09-26 21:40:56.169
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\dta47'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.resources 4 567 2022-09-26 21:43:46.313
+!MESSAGE The project description file (.project) for 'myboot01' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'myboot01' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:895)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:770)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1064)
+	at org.eclipse.ui.actions.OpenResourceAction$1.doOpenWithReferences(OpenResourceAction.java:233)
+	at org.eclipse.ui.actions.OpenResourceAction$1.runInWorkspace(OpenResourceAction.java:279)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jface 2 0 2022-09-26 21:43:52.756
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-26 21:43:52.756
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@22bb0f5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5b00d92c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2022-09-26 23:00:12.549
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2022-10-06 21:27:39.997 -----------------------------------------------
+eclipse.buildId=4.15.1.202206171354
+java.version=11.0.15.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-10-06 21:28:16.543
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-10-06 21:28:16.543
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5e085259,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@68ea1eb5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-10-06 21:28:16.543
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2e096ac0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@d7c00de,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-10-06 21:28:32.824
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\dta47'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-06 21:28:41.801
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-06 21:28:41.816
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-06 21:28:43.688
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-06 21:28:43.694
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-06 21:28:47.709
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2: https://issues.sonatype.org/browse/MVNCENTRAL-244
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-06 21:28:55.470
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-06 21:28:55.487
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-06 21:28:57.297
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-06 21:28:57.306
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-06 21:28:57.566
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-06 21:28:57.570
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-06 21:28:57.676
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-06 21:28:57.687
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-06 21:28:58.538
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-06 21:28:58.557
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-06 21:29:00.631
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2: https://issues.sonatype.org/browse/MVNCENTRAL-244
+
+!ENTRY org.eclipse.lsp4e 2 0 2022-10-06 21:29:45.289
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.ui 2 2 2022-10-06 22:15:29.271
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2022-10-20 12:06:13.632 -----------------------------------------------
+eclipse.buildId=4.15.1.202206171354
+java.version=11.0.15.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-10-20 12:06:42.547
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-10-20 12:06:42.547
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2305aad0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1c15a6aa,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-10-20 12:06:42.547
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7dc963be,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@61c4fc34,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-10-20 12:06:52.945
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\dta47'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2022-10-20 12:07:07.204
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-20 12:12:36.097
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-20 12:12:36.112
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-20 12:12:37.528
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-20 12:12:37.531
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-20 12:12:37.922
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2: https://issues.sonatype.org/browse/MVNCENTRAL-244
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-20 12:12:41.532
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-20 12:12:41.539
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-20 12:12:43.924
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-20 12:12:43.929
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-20 12:12:44.146
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-20 12:12:44.154
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-20 12:12:44.297
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-20 12:12:44.303
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-20 12:12:45.469
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-20 12:12:45.493
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-20 12:12:47.240
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2: https://issues.sonatype.org/browse/MVNCENTRAL-244
+
+!ENTRY org.eclipse.jface 2 0 2022-10-20 12:29:40.107
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-10-20 12:29:40.107
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@52af888,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@621d50d7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.core.resources 4 567 2022-10-20 12:33:31.563
+!MESSAGE The project description file (.project) for 'myboot01' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'myboot01' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:895)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:770)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1064)
+	at org.eclipse.ui.actions.OpenResourceAction$1.doOpenWithReferences(OpenResourceAction.java:233)
+	at org.eclipse.ui.actions.OpenResourceAction$1.runInWorkspace(OpenResourceAction.java:279)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-20 12:47:14.126
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2: https://issues.sonatype.org/browse/MVNCENTRAL-244
+
+!ENTRY org.eclipse.lsp4e 2 0 2022-10-20 15:20:32.713
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2022-10-21 09:03:17.116 -----------------------------------------------
+eclipse.buildId=4.15.1.202206171354
+java.version=11.0.15.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-10-21 09:03:35.224
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-10-21 09:03:35.224
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d4c6e32,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3a5ffea,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-10-21 09:03:35.224
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d126f07,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@71689ee2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-10-21 09:03:42.866
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\dta47'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-21 09:03:47.408
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-21 09:03:47.423
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-21 09:03:48.641
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-21 09:03:48.641
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-21 09:03:51.657
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2: https://issues.sonatype.org/browse/MVNCENTRAL-244
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-21 09:03:59.685
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-21 09:03:59.691
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-21 09:04:04.316
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-21 09:04:04.325
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-21 09:04:04.603
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-21 09:04:04.610
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-21 09:04:04.722
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-21 09:04:04.732
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-21 09:04:05.492
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-21 09:04:05.511
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.ui 2 2 2022-10-21 09:04:06.913
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-10-21 09:04:07.445
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2: https://issues.sonatype.org/browse/MVNCENTRAL-244
+
+!ENTRY org.eclipse.jface 2 0 2022-10-21 10:43:41.308
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-10-21 10:43:41.308
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@547c2711,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@13823ec8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.lsp4e 2 0 2022-10-21 11:25:33.251
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2022-10-21 14:17:41.571
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2022-10-21 14:55:39.682
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2022-10-21 14:55:41.738
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2022-10-21 15:00:30.541
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2022-10-21 15:23:32.892
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)

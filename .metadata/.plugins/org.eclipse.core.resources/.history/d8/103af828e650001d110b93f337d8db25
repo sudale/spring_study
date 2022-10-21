@@ -1,0 +1,21 @@
+$("#btnUpdate").click(function(){
+	var dataParam = {
+		"id": $("#id").val(),
+		"name": $("#name").val(),
+		"password": $("password").val(),
+		"email": $("email").val(),
+		"addr": $("addr").val(),
+		"memo": $("memo").val()
+	}
+	$.ajax({
+		tupe:'PUT',
+		url:"/update/",
+	})
+	.done(function(){
+		alert("수정성공")
+		location.href="/list"
+	})
+	.fail(function(){
+		alert("수정실패")
+	})
+})

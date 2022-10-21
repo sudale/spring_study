@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\sts4_workspace\project"/>
+			<item value="C:\Users\dta47\Downloads\project 채팅말고 다 되는듯"/>
+			<item value="C:\Users\dta47\Downloads\board"/>
+			<item value="C:\Users\dta47\Downloads\final_hotel"/>
+			<item value="C:\Users\dta47\Downloads\going-spring-master"/>
+			<item value="C:\sts4_workspace\ILuvJeju"/>
+			<item value="C:\Users\dta47\OneDrive\바탕 화면\006895-master\myboot01"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

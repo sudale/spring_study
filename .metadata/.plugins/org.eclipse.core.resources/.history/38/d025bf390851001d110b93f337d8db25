@@ -1,0 +1,12 @@
+package com.example.demo.model;
+
+import javax.persistence.Entity;
+
+@Entity
+public class User {
+	
+	private BIGINT userid;
+	private VARCHAR address;
+	private VARCHAR nickname;
+	private VARCHAR username;
+}

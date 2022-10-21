@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>수정하기</h3>
+		<p>
+			id : <input type="text" name="id" value="${member.id }"/>
+		</p>
+		<p>
+			Name : <input type="text" name="name" value="${member.id }"/>
+		</p>
+		<p>
+			Password : <input type="text" name="password" />
+		</p>
+		<p>
+			Email : <input type="text" name="email" value="${member.id }"/>
+		</p>
+		<p>
+			Addr : <input type="text" name="addr" size="30" value="${member.id }"/>
+		</p>
+		<p>
+			Memo : <textarea rows="5" cols="50" name="memo">${member.id }</textarea>
+		</p>
+</body>
+</html>

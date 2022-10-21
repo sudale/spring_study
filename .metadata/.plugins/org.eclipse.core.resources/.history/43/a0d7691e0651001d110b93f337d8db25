@@ -1,0 +1,16 @@
+package com.example.demo.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="hotel_review")
+public class Review {
+	private Long id;
+	private int rate;
+	private String comment;
+	private Date ratingDate;
+	
+	private Hotel hotel;
+
+}

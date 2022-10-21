@@ -1,0 +1,15 @@
+package com.example.demo.model;
+
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+
+@Entity
+public class Order {
+
+	private BIGINT orderid;
+	private VARCHAR note;
+	private VARCHAR ordername;
+	private int price;
+	@JoinColumn(name="user_id")
+	private User user;
+}

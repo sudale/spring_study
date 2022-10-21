@@ -1,0 +1,22 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import com.example.demo.model.JpaMember;
+
+@Controller
+public class HomeController {
+	@GetMapping("/")
+	public String home() {
+		return "home";
+	}
+	@GetMapping("/join")
+	public String join() {
+		return "join";
+	}
+	@GetMapping("/join")
+	public String join(JpaMember member) {
+		return "join";
+	}
+
+}
